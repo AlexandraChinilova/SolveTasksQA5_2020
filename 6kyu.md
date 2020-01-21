@@ -55,3 +55,17 @@ d = i;
   return d
 }
 ```
+* Make the Deadfish swim
+```javascript
+function parse(data){
+let res = 0;
+let arr = [];
+ for (let i=0; i < data.length; i++){
+  if (data[i] == 'i'){ res += 1}
+  if (data[i] == 'd'){ res -= 1}
+  if (data[i] == 's'){ res *= res}
+  if (data[i] == 'o'){ arr.push(res)}
+ }
+ return arr
+}
+```
