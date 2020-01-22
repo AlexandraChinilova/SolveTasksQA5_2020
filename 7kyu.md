@@ -16,3 +16,10 @@ const closestMultiple10 = num => {
   return Math.round(num/10)*10;
 }
 ```
+* Is this a triangle?
+```javascript
+function isTriangle(a,b,c){
+if (a < b+c && b < a+c && c < a+b){return true};
+return false;
+}
+```
