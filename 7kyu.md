@@ -23,3 +23,18 @@ if (a < b+c && b < a+c && c < a+b){return true};
 return false;
 }
 ```
+* Calculate Two People's Individual Ages
+```javascript
+function getAges(sum,diff){
+if (sum < 0 || diff < 0){return null}
+let ages = [];
+let p1 = (sum - diff)/2;
+let p2 = sum - p1
+if (p1 >= 0 && p2 >= 0){
+ages.push(p2);
+ages.push(p1);
+return ages
+}
+return null
+}
+```
