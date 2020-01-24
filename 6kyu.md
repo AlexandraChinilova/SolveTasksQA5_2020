@@ -69,3 +69,15 @@ let arr = [];
  return arr
 }
 ```
+* Row of the odd triangle
+```javascript
+function oddRow(n) {
+let res = [];
+let count = n**2 - (n-1);
+for (i = 0; i < n; i++){
+res.push(count);
+count +=2
+}
+  return res
+}
+```
