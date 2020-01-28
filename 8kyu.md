@@ -20,3 +20,16 @@ return number <= 10 ? dogs[0]
                       : dogs[3]
 }
 ```
+* Basic Mathematical Operations
+```javascript
+function basicOp(operation, v1, v2){
+let res = 0;
+ switch (operation){
+   case '+' : res = v1 + v2; break;
+   case '-' : res = v1 - v2; break;
+   case '*' : res = v1 * v2; break;
+   case '/' : res = v1 / v2; break;
+ }
+ return res
+}
+```
