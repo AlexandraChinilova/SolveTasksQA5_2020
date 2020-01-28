@@ -81,3 +81,23 @@ count +=2
   return res
 }
 ```
+* Pokemon Damage Calculator
+```javascript
+function calculateDamage(yT, oT, attack, defense){
+let dmg = 0, eff = 1;
+  if (yT == 'fire' && oT == 'grass'
+   || yT == 'grass' && oT == 'water'
+   || yT == 'water' && oT == 'fire'
+   || yT == 'electric' && oT == 'water'){
+    eff = 2;
+  }
+    else if (yT == oT
+          || yT == 'fire' && oT == 'water'
+          || yT == 'grass' && oT == 'fire'
+          || yT == 'water' && oT == 'grass'
+          || yT == 'water' && oT == 'electric'){
+          eff = 0.5;
+    }
+return dmg = 50 * (attack/defense)*eff;
+}
+```
