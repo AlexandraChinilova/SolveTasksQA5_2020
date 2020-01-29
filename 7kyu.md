@@ -38,3 +38,14 @@ return ages
 return null
 }
 ```
+* Power of two
+```javascript
+function isPowerOfTwo(n){
+if (n == 1){return true};
+if (n == 0){return false};
+  while (n >= 2){
+   n = n/2;
+  }
+  return n > 1 ? false : true;
+}
+```
