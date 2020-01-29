@@ -49,3 +49,16 @@ if (n == 0){return false};
   return n > 1 ? false : true;
 }
 ```
+* The wheat/rice and chessboard problem
+```javascript
+function squaresNeeded(grains){
+  console.log(grains)
+  let sum = 0, z = 1, kl = 0
+  while (sum < grains){
+    sum += z;
+    z *=2;
+    kl++
+  }
+  return kl
+}
+```
