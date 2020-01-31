@@ -33,3 +33,16 @@ let res = 0;
  return res
 }
 ```
+* Power
+```javascript
+function numberToPower(number, power){
+if (power == 0){return 1}
+let i = 1, res = 1;
+  do{
+   res *= number;
+   i++
+  }
+  while (i <= power)
+  return res
+}
+```

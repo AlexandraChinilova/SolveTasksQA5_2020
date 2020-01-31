@@ -101,3 +101,30 @@ let dmg = 0, eff = 1;
 return dmg = 50 * (attack/defense)*eff;
 }
 ```
+* Sums of Parts
+```javascript
+function partsSums(ls){
+if (ls.length == 0){return [0]}
+let sum = ls.slice();
+sum.push(0);
+ for (let i = ls.length; i >= 1; i--){
+   ls.shift()
+   for (let l = 0; l < ls.length; l++){
+    sum[l] += ls[l]
+   }
+ }
+return sum
+}
+// не работает для длинных массивов
+// вторая версия для длинных
+function partsSums(ls){
+let sum = [];
+let chisl = ls.reduce((a, b) => a + b, 0)
+sum.push(chisl)
+  for (let i = 0; i < ls.length; i++){
+   chisl -= ls[i];
+   sum.push(chisl)
+  }
+return sum
+}
+```
