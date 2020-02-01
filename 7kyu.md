@@ -74,3 +74,15 @@ function SeriesSum(n){
   return sum.toFixed(2)
 }
 ```
+* Filter the number
+```javascript
+var FilterString = function(value) {
+let str = '';
+  for (let i=0; i < value.length; i++){
+    if (isNaN(value[i]) == false){
+      str += value[i]
+    }
+  }
+  return +str
+}
+```
