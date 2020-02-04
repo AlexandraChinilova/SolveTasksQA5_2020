@@ -86,3 +86,17 @@ let str = '';
   return +str
 }
 ```
+* Lottery machine
+```javascript
+function lottery(str){
+let res = str.match(/\d/g)
+  if (res == null){return 'One more run!'}
+let fres = [res[0]]
+  for (let i = 1; i < res.length; i++){
+    if (fres.every(e => res[i] != e)){
+      fres.push(res[i])
+    }
+  }
+ return fres.join('')
+}
+```
