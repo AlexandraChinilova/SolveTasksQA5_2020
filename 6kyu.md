@@ -128,3 +128,21 @@ sum.push(chisl)
 return sum
 }
 ```
+* Split Strings
+```javascript
+function solution(str){
+ let res = [];
+ if (str.length%2 === 0){
+   for (let i=0; i < str.length; i+=2){
+     res.push(str[i]+str[i+1]);
+   }
+  }
+  if (str.length%2 > 0) {
+    for (let i=0; i < str.length-1; i+=2){
+     res.push(str[i]+str[i+1])
+   }
+   res.push(str[str.length-1] + '_')
+  }
+ return res
+}
+```
