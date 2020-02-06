@@ -146,3 +146,13 @@ function solution(str){
  return res
 }
 ```
+* Create Phone Number
+```javascript
+function createPhoneNumber(numb){
+let cod = '', thr = '', four = '';
+  for (let i = 0; i < numb.length; i++){
+    i < 3 ? cod += numb[i] : i < 6 ? thr += numb[i] : four += numb[i]
+  }
+  return `(${cod}) ${thr}-${four}`
+}
+```
