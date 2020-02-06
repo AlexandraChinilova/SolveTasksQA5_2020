@@ -156,3 +156,21 @@ let cod = '', thr = '', four = '';
   return `(${cod}) ${thr}-${four}`
 }
 ```
+* What will be the odd one out?
+```javascript
+function oddOneOut(str){
+   let b = '', res = [];
+   let strM = str.split('');
+     for (let i=0; strM.length > 0; i++){
+       b = strM[0]
+       strM = strM.slice(1)
+       if (strM.includes(b)){
+         strM.splice(strM.indexOf(b), 1)
+       }
+       else {
+         res.push(b)
+       }
+     }
+   return res
+}
+```
