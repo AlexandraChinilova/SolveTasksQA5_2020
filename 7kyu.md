@@ -100,3 +100,18 @@ let fres = [res[0]]
  return fres.join('')
 }
 ```
+* Jumping Number (Special Numbers Series #4)
+```javascript
+function jumpingNumber(n){
+  if (n < 11){return 'Jumping!!'}
+    if (n > 10){
+    let arr = n.toString().split('')
+      for (let i=0; i < arr.length-1; i++){
+        if (Math.abs(arr[i+1]-arr[i]) > 1 || arr[i+1]-arr[i] == 0){
+        return 'Not!!'
+        }
+     }
+     return 'Jumping!!'
+    }
+}
+```
