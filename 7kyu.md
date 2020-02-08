@@ -115,3 +115,21 @@ function jumpingNumber(n){
     }
 }
 ```
+* Form The Minimum
+```javascript
+function minValue(values){
+ values.sort()
+ let arr = [values[0]], ch = values[0];
+ for (let i=1; i < values.length; i++){
+  if (values[i] != ch){
+    arr.push(values[i]);
+    ch = values[i];
+  }
+ }
+ ch = '';
+ for (let j = 0; j < arr.length; j++){
+   ch += arr[j];
+ }
+ return +ch
+}
+```
