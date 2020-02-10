@@ -133,3 +133,19 @@ function minValue(values){
  return +ch
 }
 ```
+* London CityHacker
+```javascript
+function londonCityHacker(j) {
+let m = 2.4, b = 1.5, p = 0;
+  for (let i=0; i < j.length; i++){
+    if (typeof j[i] == 'string'){p += m}
+    if (typeof j[i] == 'number'){
+      p += b;
+      if (typeof j[i+1] == 'number'){
+        i++
+      }
+    }
+  }
+return `£${p.toFixed(2)}`
+}
+```
