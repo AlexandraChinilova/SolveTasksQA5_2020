@@ -174,3 +174,16 @@ function oddOneOut(str){
    return res
 }
 ```
+* Arrh, grabscrab!
+```javascript
+function grabscrab(anagram, d) {
+  let an = anagram.split('').sort().join('');
+  let res = [];
+  for (let i=0; i< d.length; i++){
+   if (d[i].split('').sort().join('') == an){
+     res.push(d[i])
+   }
+  }
+  return res
+}
+```
