@@ -56,3 +56,19 @@ function SafeInteger(n){
  return Number.isSafeInteger(n)
 }
 ```
+* Is it a palindrome?
+```javascript
+function isPalindrome(x) {
+if (x.length <= 1){return true}
+  x = x.toUpperCase();
+  let a = x.length-1, res = false;
+  for (let i=0; i < x.length/2; i++){
+   if (x[i] == x[a]){
+   res = true;
+   }
+   else {return false}
+   a--;
+  }
+  return res
+}
+```
