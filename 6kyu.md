@@ -187,3 +187,20 @@ function grabscrab(anagram, d) {
   return res
 }
 ```
+* New Cashier Does Not Know About Space or Shift
+```javascript
+function getOrder(input){
+let order = '';
+const menu = ['burger', 'fries', 'chicken', 'pizza',
+              'sandwich', 'onionrings', 'milkshake', 'coke'];
+  for (let i=0; i < menu.length; i++){
+    let w = input.match(new RegExp(menu[i], 'g'));
+    if (new RegExp('' + menu[i]).test(input) && input.match(menu[i])[0] == menu[i]){
+      for (let j=0; j < w.length; j++){
+       order += menu[i][0].toUpperCase() + menu[i].slice(1) + ' ';
+      }
+    }
+  }
+return order.slice(0, -1);
+}
+```
