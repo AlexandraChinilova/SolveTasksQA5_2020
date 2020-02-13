@@ -149,3 +149,14 @@ let m = 2.4, b = 1.5, p = 0;
 return `£${p.toFixed(2)}`
 }
 ```
+* Tail Swap
+```javascript
+function tailSwap(arr){
+let res = [];
+for (let i=0, j=arr.length-1; i < arr.length; i++, j--){
+let i1 = arr[i].search(/:/), i2 = arr[j].search(/:/)
+ res.push(arr[i].substring(0, i1) + arr[j].slice(i2))
+}
+  return res;
+}
+```
