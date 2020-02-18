@@ -160,3 +160,23 @@ let i1 = arr[i].search(/:/), i2 = arr[j].search(/:/)
   return res;
 }
 ```
+* Pandemia
+```javascript
+function infected(s){
+let arr = s.split('X'), people = 0, inf = 0;
+for (let i=0; i < s.length; i++){
+  if (s[i] == 0 || s[i] == 1){
+  people++
+  }
+}
+for (let j=0; j < arr.length; j++){
+  if(arr[j].match(/1/) != null){
+    for (let el=0; el < arr[j].length; el++){
+    inf++
+    }
+  }
+}
+if (people == 0){return 0}
+  return inf/people*100;
+}
+```
