@@ -180,3 +180,13 @@ if (people == 0){return 0}
   return inf/people*100;
 }
 ```
+* What's my golf score?
+```javascript
+function golfScoreCalculator(parList, scoreList){
+let res = 0
+  for (let i=0; i < parList.length; i++){
+    res += scoreList[i] - parList[i];
+  }
+return res
+}
+```
