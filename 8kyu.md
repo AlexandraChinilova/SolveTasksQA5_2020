@@ -85,3 +85,9 @@ var longest = 0;
     return longest
 }
 ```
+* Beginner - Reduce but Grow
+```javascript
+function grow(x){
+return x.reduce((a,b) => a*b)
+}
+```
