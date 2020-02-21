@@ -190,3 +190,34 @@ let res = 0
 return res
 }
 ```
+* Scrabble Score
+```javascript
+function scrabbleScore(str){
+str = str.toLowerCase()
+console.log(str)
+let res = 0
+  if (str == ''){return 0}
+ if (str.match(/[ateoluirsn]/g)){
+     res += str.match(/[ateoluirsn]/g).length
+   }
+   if (str.match(/[dg]/g)){
+     res += (2*str.match(/[dg]/g).length)
+   }
+   if (str.match(/[bcmp]/g)){
+     res += (3*str.match(/[bcmp]/g).length)
+   }
+   if (str.match(/[fhvwy]/g)){
+     res += (4*str.match(/[fhvwy]/g).length)
+   }
+   if (str.match(/[k]/g)){
+     res += (5*str.match(/[k]/g).length)
+   }
+   if (str.match(/[jx]/g)){
+     res += (8*str.match(/[jx]/g).length)
+   }
+   if (str.match(/[qz]/g)){
+     res += (10*str.match(/[qz]/g).length)
+   }
+  return res
+}
+```
