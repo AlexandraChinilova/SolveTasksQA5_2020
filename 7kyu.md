@@ -221,3 +221,10 @@ let res = 0
   return res
 }
 ```
+* Help Bob count letters and digits.
+```javascript
+function countLettersAndDigits(input) {
+input = input.replace(/_/g, "!")
+return input.match(/\w/g) != null ? input.match(/\w/g).length : 0
+}
+```
