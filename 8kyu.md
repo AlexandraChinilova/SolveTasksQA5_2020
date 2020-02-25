@@ -91,3 +91,9 @@ function grow(x){
 return x.reduce((a,b) => a*b)
 }
 ```
+* BASIC: Making Six Toast.
+```javascript
+function sixToast(num) {
+  return Math.abs(num - 6)
+}
+```
