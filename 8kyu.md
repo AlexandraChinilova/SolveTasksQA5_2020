@@ -97,3 +97,9 @@ function sixToast(num) {
   return Math.abs(num - 6)
 }
 ```
+* Closest elevator
+```javascript
+function elevator(left, right, call){
+  return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right'
+}
+```
