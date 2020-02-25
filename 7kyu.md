@@ -228,3 +228,19 @@ input = input.replace(/_/g, "!")
 return input.match(/\w/g) != null ? input.match(/\w/g).length : 0
 }
 ```
+* Smoking Timmy
+```javascript
+function startSmoking(bars,boxes){
+let sig = bars*10*18 + boxes*18, dopsig, ost, v = sig;
+  if (sig > 0){
+    do{
+      dopsig = Math.floor(sig/5);
+      v += dopsig;
+      ost = sig%5;
+      sig = dopsig + ost;
+    }
+  while (sig > 4)
+  }
+  return v;
+}
+```
