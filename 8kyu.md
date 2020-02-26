@@ -103,3 +103,16 @@ function elevator(left, right, call){
   return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right'
 }
 ```
+* To square(root) or not to square(root)
+```javascript
+function squareOrSquareRoot(array){
+let arr = [];
+for (let i=0; i< array.length; i++){
+  if (Number.isInteger(Math.pow(array[i], 0.5))){
+    arr.push(Math.pow(array[i], 0.5))
+  }
+  else {arr.push(Math.pow(array[i], 2))}
+}
+  return arr;  
+}
+```
