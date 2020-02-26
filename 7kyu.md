@@ -244,3 +244,16 @@ let sig = bars*10*18 + boxes*18, dopsig, ost, v = sig;
   return v;
 }
 ```
+* Squares sequence
+```javascript
+function squares(x, n) {
+let res = [];
+  if (n > 0){
+    for (let i = 1; i <=n; i++){
+      res.push(x)
+      x = Math.pow(x, 2)
+    }
+  }
+return res
+}
+```
