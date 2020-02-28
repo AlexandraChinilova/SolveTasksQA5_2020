@@ -257,3 +257,17 @@ let res = [];
 return res
 }
 ```
+* Square Every Digit
+```javascript
+function squareDigits(num){
+let str = num.toString(), res = [];
+  for (let i=0; i < str.length; i++){
+    res.push(Math.pow(str[i], 2))
+  }
+  return +res.join('')
+}
+// mine short version
+function squareDigits(num){
+return +num.toString().split('').map(a => Math.pow(a,2)).join('')
+}
+```
